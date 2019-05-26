@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="przepisy_i_powiadomienia.przepis_calosc"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:przepisy_i_powiadomienia"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Text=""/>
+            <TextBlock TextAlignment="Center" Text="Przepis" Style="{ThemeResource HeaderTextBlockStyle}"/>
+            <TextBlock Text=""/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Margin="0,18,0,0" Grid.Column="0">
+            <ListBox Name="Skladniki" Height="700" Width="574" HorizontalAlignment="Left" Margin="50,0,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Stretch" Margin="0,18,0,0" VerticalAlignment="Stretch">
+            <ListBox Name="Przepis" Height="700" Margin="720,0,50,0"/>
+        </StackPanel>
+
+
+        <CommandBar Grid.Row="2">
+            <AppBarButton Icon="Back" Label="Cofnij" Click="Cofnij" HorizontalAlignment="Left"/>
+            <AppBarButton Icon="Favorite" Label="Ulubione" Click="Ulubione" Name="Ulubione1" Foreground="Black"/>
+            <AppBarButton Icon="Add" Label="Dodaj przepis" Click="Dodaj" HorizontalAlignment="Right"/>
+
+        </CommandBar>
+    </Grid>
+</Page>

@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="przepisy_i_powiadomienia.Przepisy"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:przepisy_i_powiadomienia"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <TextBlock Text=""/>
+            <TextBlock TextAlignment="Center" Text="Przepisy" Style="{ThemeResource HeaderTextBlockStyle}"/>
+            <TextBlock Text=""/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="0,10,0,26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <ListBox Height="808" Width="933" x:Name="Nazwy_przepisow" Margin="126,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+        </StackPanel>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1170,52,0,0" Height="463" Width="288">
+            <RadioButton Content="Wszystkie" IsChecked="True" x:Name="wszy" FontSize="25" Margin="0,0,0,0" VerticalAlignment="Center"/>
+            <RadioButton Content="Śniadanie" x:Name="sniad" FontSize="25"/>
+            <RadioButton Content="Obiad" x:Name="obiad" FontSize="25"/>
+            <RadioButton Content="Kolacja" x:Name="kolac" FontSize="25" />
+            <CheckBox Content="Ulubione" x:Name="ulubione" FontSize="25" />
+            <TextBlock/>
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Text="Szukaj przepisu po składnikach:" FontSize="20"/>
+                <TextBlock/>
+                <ComboBox Name="Combobox1" Width="150" HorizontalAlignment="Center"/>
+                <ComboBox Name="Combobox2" Width="150" HorizontalAlignment="Center"/>
+                <ComboBox Name="Combobox3" Width="150" HorizontalAlignment="Center"/>
+                <ComboBox Name="Combobox4" Width="150" HorizontalAlignment="Center"/>
+                <TextBlock/>
+                <Button Content="Szukaj" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="47" Click="Szukaj"/>
+            </StackPanel>
+        </StackPanel>
+
+        <CommandBar Grid.Row="2">
+            <AppBarButton Icon="Back" Label="Cofnij" Click="Cofnij" HorizontalAlignment="Left"/>
+            <AppBarButton Icon="Delete" Label="Usuń" Click="Usun"/>
+            <AppBarButton Icon="Forward" Label="Dalej" Click="Dalej" HorizontalAlignment="Right"/>
+
+        </CommandBar>
+    </Grid>
+</Page>

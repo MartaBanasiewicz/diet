@@ -1,0 +1,79 @@
+﻿<Page
+    x:Class="przepisy_i_powiadomienia.Cele"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:przepisy_i_powiadomienia"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="70"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="70"/>
+            <Setter Property="Width" Value="360"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="70"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Padding="0,20,0,20">
+            <TextBlock TextAlignment="Center" Text="Wskażniki masy ciała" Style="{ThemeResource HeaderTextBlockStyle}"/>
+        </StackPanel>
+        <Grid Grid.Row="1" HorizontalAlignment="Stretch" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="342*"/>
+                <ColumnDefinition Width="116*"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="457*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="0" Text="Masa ciała:" Margin="387,0,0,0"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2" Text="Ilość spożytych płynów:" />
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="3" Grid.Column="0" Text="Ilość spożytych kalorii:" Margin="39,0,0,0" />
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="4" Grid.Column="0" Text="Pokonany dystatns:" Margin="131,0,0,0" />
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="2" Text="OBECNIE" Margin="170,0,0,0" />
+            <TextBox x:ConnectionId='3' x:Name="currentWeight"  VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" Text="Masa ciała:" Grid.ColumnSpan="2" Margin="100,0,0,0"                             />
+            <TextBox x:ConnectionId='4' x:Name="currentWater"  VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="1" Text="Masa ciała:" Grid.ColumnSpan="2" Margin="100,0,0,0"                             />
+            <TextBox x:ConnectionId='5' x:Name="currentCalories"  VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="3" Grid.Column="1" Text="Masa ciała:" Grid.ColumnSpan="2" Margin="100,0,0,0"                             />
+            <TextBox x:ConnectionId='6' x:Name="currentDistance"  VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="4" Grid.Column="1" Text="Masa ciała:" Grid.ColumnSpan="2" Margin="100,0,0,0"                             />
+            <TextBlock Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="3" Text="kg" />
+            <TextBlock Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="3" Text="ml" />
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="3" Text="kcal" />
+            <TextBlock Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="4" Grid.Column="3" Text="m" />
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="4" Grid.ColumnSpan="2" Text="DOCELOWO" />
+            <TextBox x:ConnectionId='7' x:Name="targetWeight" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="4" Text="Masa ciała:" Margin="99,0,0,0"                             />
+            <TextBox x:ConnectionId='8' x:Name="targetWater" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="4" Text="Masa ciała:" Margin="99,0,0,0"                             />
+            <TextBox x:ConnectionId='9' x:Name="targetCalories" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="3" Grid.Column="4" Text="Masa ciała:" Margin="99,0,0,0"                             />
+            <TextBox x:ConnectionId='10' x:Name="targetDistacne" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="4" Grid.Column="4" Text="Masa ciała:" Margin="99,0,0,0"                             />
+            <TextBlock Margin="20" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="5" Text="kg" />
+            <TextBlock Margin="20" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="5" Text="ml" />
+            <TextBlock Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="5" Text="kcal" />
+            <TextBlock Margin="20" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="4" Grid.Column="5" Text="m" />
+            <Button x:ConnectionId='11' x:Name="saveButton" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Content="Zapisz" Margin="116,0,0,0" Padding="20"                      />
+        </Grid>
+        <CommandBar Grid.Row="2">
+            <AppBarButton x:ConnectionId='1' Icon="Back" Label="Cofnij"                HorizontalAlignment="Left"/>
+            <AppBarButton x:ConnectionId='2' Icon="Refresh" Label="Resetuj filtry"                           />
+        </CommandBar>
+    </Grid>
+</Page>
+

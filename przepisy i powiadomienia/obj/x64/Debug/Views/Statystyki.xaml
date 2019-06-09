@@ -1,0 +1,118 @@
+﻿<Page
+    x:Class="przepisy_i_powiadomienia.Statystyki"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:przepisy_i_powiadomienia"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    IsTabStop="false"
+    xmlns:controls="using:WinRTXamlToolkit.Controls"
+    xmlns:charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
+    xmlns:Series="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
+    xmlns:datavis="using:WinRTXamlToolkit.Controls.DataVisualization">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition
+                Width="310" />
+            <ColumnDefinition
+                Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Padding="0,20,0,20">
+            <TextBlock TextAlignment="Center" Text="Statystyki" Style="{ThemeResource HeaderTextBlockStyle}"/>
+        </StackPanel>
+        <ListView x:ConnectionId='1'
+            x:Name="ChartsIndex"
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            SelectionMode="Single"
+            SelectedIndex="{Binding SelectedIndex, ElementName=ChartsList, Mode=TwoWay}">
+            <ListView.ItemContainerStyle>
+                <Style
+                    TargetType="ListViewItem">
+                    <Setter
+                        Property="Padding"
+                        Value="12,5" />
+                    <Setter
+                        Property="FontWeight"
+                        Value="SemiBold" />
+                </Style>
+            </ListView.ItemContainerStyle>
+            <TextBlock>Waga</TextBlock>
+            <TextBlock>Spożycie płynów</TextBlock>
+            <TextBlock>Spożyte kalorie</TextBlock>
+            <TextBlock>Przebyty dystans</TextBlock>
+        </ListView>
+        <Grid
+            Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition 
+                    Width="Auto"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+
+        </Grid>
+        <FlipView x:ConnectionId='2'
+            x:Name="ChartsList"
+            Grid.Row="1"
+            Grid.Column="1"
+            Background="Beige" Grid.RowSpan="2">
+
+            <charting:Chart x:ConnectionId='4'
+                x:Name="weight"
+                Title="Masa ciała"
+                Margin="70">
+                <charting:LineSeries
+                    Title="Masa ciała[kg]"
+                    IndependentValueBinding="{Binding Name}"
+                    DependentValueBinding="{Binding Value}"
+                    IsSelectionEnabled="True" />
+            </charting:Chart>
+            <charting:Chart x:ConnectionId='5'
+                x:Name="water"
+                Title="Wypita woda"
+                Margin="70,0">
+                <charting:LineSeries
+                    Title="Wypita woda[ml]"
+                    IndependentValueBinding="{Binding Name}"
+                    DependentValueBinding="{Binding Value}"
+                    IsSelectionEnabled="True" />
+            </charting:Chart>
+            <charting:Chart x:ConnectionId='6'
+                x:Name="calories"
+                Title="Spożyte kolerie"
+                Margin="70,0">
+                <charting:LineSeries
+                    Title="Spożyte kolerie[kcal]"
+                    IndependentValueBinding="{Binding Name}"
+                    DependentValueBinding="{Binding Value}"
+                    IsSelectionEnabled="True" />
+            </charting:Chart>
+            <charting:Chart x:ConnectionId='7'
+                x:Name="distance"
+                Title="Przebyty dystans"
+                Margin="70,0">
+                <charting:LineSeries
+                    Title="Przebyty dystans[m]"
+                    IndependentValueBinding="{Binding Name}"
+                    DependentValueBinding="{Binding Value}"
+                    IsSelectionEnabled="True" />
+            </charting:Chart>
+
+        </FlipView>
+        <CommandBar Grid.Row="3" Grid.ColumnSpan="2">
+            <AppBarButton x:ConnectionId='3' Icon="Back" Label="Cofnij"                HorizontalAlignment="Left"/>
+        </CommandBar>
+
+    </Grid>
+</Page>
+
+

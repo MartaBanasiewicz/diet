@@ -1,0 +1,26 @@
+WinMetadata\Windows.winmd
+Assets\LockScreenLogo.scale-200.png
+Assets\SplashScreen.scale-200.png
+Assets\Square150x150Logo.scale-200.png
+Assets\Square44x44Logo.scale-200.png
+Assets\Square44x44Logo.targetsize-24_altform-unplated.png
+Assets\StoreLogo.png
+Assets\Wide310x150Logo.scale-200.png
+App.xbf
+przepisy i powiadomienia.xr.xml
+Views\Cele.xbf
+Views\dodawanie_przepisu.xbf
+Views\Main_menu.xbf
+Views\przepis_calosc.xbf
+Views\Przepisy.xbf
+Views\Statystyki.xbf
+Views\Wskazniki.xbf
+DB\p4.sql
+DB\ppp.db
+Images\cele.jpg
+Images\powiadomienia.jpg
+Images\przepisy.jpg
+Images\statystyki.jpg
+Images\trasa.jpg
+Images\wskaznik.jpg
+Properties\Default.rd.xml

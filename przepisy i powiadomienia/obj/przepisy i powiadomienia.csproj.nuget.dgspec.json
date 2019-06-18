@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\macie\\Desktop\\przepisy i powiadomienia\\przepisy i powiadomienia\\przepisy i powiadomienia.csproj": {}
+    "C:\\Users\\macie\\Downloads\\przepisy i powiadomienia\\przepisy i powiadomienia\\przepisy i powiadomienia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\macie\\Desktop\\przepisy i powiadomienia\\przepisy i powiadomienia\\przepisy i powiadomienia.csproj": {
+    "C:\\Users\\macie\\Downloads\\przepisy i powiadomienia\\przepisy i powiadomienia\\przepisy i powiadomienia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\macie\\Desktop\\przepisy i powiadomienia\\przepisy i powiadomienia\\przepisy i powiadomienia.csproj",
+        "projectUniqueName": "C:\\Users\\macie\\Downloads\\przepisy i powiadomienia\\przepisy i powiadomienia\\przepisy i powiadomienia.csproj",
         "projectName": "przepisy i powiadomienia",
-        "projectPath": "C:\\Users\\macie\\Desktop\\przepisy i powiadomienia\\przepisy i powiadomienia\\przepisy i powiadomienia.csproj",
+        "projectPath": "C:\\Users\\macie\\Downloads\\przepisy i powiadomienia\\przepisy i powiadomienia\\przepisy i powiadomienia.csproj",
         "packagesPath": "C:\\Users\\macie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\macie\\Desktop\\przepisy i powiadomienia\\przepisy i powiadomienia\\obj\\",
+        "outputPath": "C:\\Users\\macie\\Downloads\\przepisy i powiadomienia\\przepisy i powiadomienia\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -54,6 +54,10 @@
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.8, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
             },
             "SQLite": {
               "target": "Package",

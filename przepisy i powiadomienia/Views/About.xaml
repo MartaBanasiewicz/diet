@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="przepisy_i_powiadomienia.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:przepisy_i_powiadomienia"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <TextBlock Text=""/>
+            <TextBlock TextAlignment="Center" Text="O aplikacji" Style="{ThemeResource HeaderTextBlockStyle}" FontWeight="Bold"/>
+            <TextBlock Text=""/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBlock FontSize="25" Text="Aplikacja pomagająca osiągnąć upragniona sylwetkę." TextAlignment="Center"></TextBlock>
+            <TextBlock FontSize="25" Text="Abyś wyglądał i czuł się najlepiej" TextAlignment="Center"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+            <TextBlock FontSize="40" Text="Autorzy:   " TextAlignment="Right" />
+            <TextBlock FontSize="35" Text="Marta Banasiewicz" TextAlignment="Right"/>
+            <TextBlock FontSize="35" Text="Marcin Saganek" TextAlignment="Right"/>
+            <TextBlock FontSize="35" Text="Sebastian Wołos" TextAlignment="Right"/>
+        </StackPanel>
+
+        <CommandBar Grid.Row="3">
+            <AppBarButton Icon="Back" Label="Cofnij" Click="Cofnij" HorizontalAlignment="Left"/>
+        </CommandBar>
+    </Grid>
+
+</Page>

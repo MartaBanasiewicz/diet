@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="przepisy_i_powiadomienia.Views.Trasa"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:przepisy_i_powiadomienia.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:my="using:Windows.UI.Xaml.Controls.Maps"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <TextBlock Name="Trasy" Text="Trasy" HorizontalAlignment="Center" Style="{ThemeResource HeaderTextBlockStyle}"/>
+        </StackPanel>
+        <my:MapControl Grid.Row="1" Name="Mapa" Margin="10" MapServiceToken="3pAUUgWkWPfIX9HtswF8~1Yg1mBbw68KrE1hZ8fnC9w~Alh3u6EXs0wu3Bbz1nbqIr6L5NmVJ5Bclvq2VeRbDQ40I1PM21Ewa7t5-MnWSaMK" MapTapped="DodajPunkt"/>
+        <StackPanel Grid.Row="2" >
+            <TextBlock Name="DaneT" Text="Dane dotyczące trasy: " Margin="10"/>
+            <TextBlock Name="nTrasy" Text="" Margin="10"/>
+            <TextBox Name="tbNtrasy" Width="0" HorizontalAlignment="Left" Margin="10"/>
+            <TextBlock Name="DlugoscT" Text="" Margin="10"/>
+            <TextBlock Name="SzCzas" Text="" Margin="10"/>
+            <TextBlock Name="tbKalorie" Text="" Margin="10"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Bottom" Grid.Row="3">
+            <CommandBar>
+                <AppBarButton Icon="Back" Label="Cofnij" Click="Cofnij"/>
+                <AppBarButton Icon="Map" Label="Ulubione" Click="Ulubione"/>
+                <AppBarButton Icon="Add" Label="Powiększ" Click="powMape"/>
+                <AppBarButton Icon="Remove" Label="Zmniejsz" Click="pomMape"/>
+                <AppBarButton Icon="Favorite" Label="Dodaj do Ulubionych" Click="dodajDoUlubionych"/>
+            </CommandBar>
+        </StackPanel>
+    </Grid>
+</Page>

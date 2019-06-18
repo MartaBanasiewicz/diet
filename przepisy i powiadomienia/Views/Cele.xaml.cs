@@ -47,6 +47,8 @@ namespace przepisy_i_powiadomienia
 
         private void SetTargetTextBoxes()
         {
+            if (target == null)
+                return;
             targetWeight.Text = target.Weight.ToString();
             targetWater.Text = target.Water.ToString();
             targetCalories.Text = target.Calories.ToString();
@@ -55,10 +57,12 @@ namespace przepisy_i_powiadomienia
 
         private void SetMeasurementTextBoxes()
         {
-            currentWeight.Text = measurement.Weight.ToString();
-            currentWater.Text = measurement.Water.ToString();
-            currentCalories.Text = measurement.Calories.ToString();
-            currentDistance.Text = measurement.Distance.ToString();
+            if (measurement == null)
+                return;
+            currentWeight.Text = measurement?.Weight.ToString();
+            currentWater.Text = measurement?.Water.ToString();
+            currentCalories.Text = measurement?.Calories.ToString();
+            currentDistance.Text = measurement?.Distance.ToString();
         }
 
         private void Zapisz_Click(object sender, RoutedEventArgs e)

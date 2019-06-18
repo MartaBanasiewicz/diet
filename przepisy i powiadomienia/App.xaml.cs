@@ -38,18 +38,23 @@ namespace przepisy_i_powiadomienia
             {
                 db.Database.Migrate();
                 //db.Measurements.Add(new Measurement { Weight = 70, Calories = 1000, Water = 3000, Distance = 2, DateTime = DateTime.Now });
+                //db.Targets.Add(new Target { Weight = 70, Calories = 1000, Water = 3000, Distance = 2 });
                 //db.SaveChanges();
             }
         }
         private async void WczytajBD()
         {
-            var localFolder = ApplicationData.Current.LocalFolder;
-            var originalDbFileUri = new Uri("ms-appx:///DB/ppp.db");
-            var originalDbFile = await StorageFile.GetFileFromApplicationUriAsync(originalDbFileUri);
-            if (null != originalDbFile)
+            StorageFile fileSource = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///DB/ppp.db", UriKind.RelativeOrAbsolute));
+            StorageFolder Folder = ApplicationData.Current.LocalFolder;
+            try
             {
-                StorageFile  dbFile = await originalDbFile.CopyAsync(localFolder, "ppp.db", NameCollisionOption.ReplaceExisting);
+                StorageFile fileCheck = await Folder.GetFileAsync("ppp.db");
             }
+            catch
+            {
+                await fileSource.CopyAsync(Folder, "ppp.db", NameCollisionOption.ReplaceExisting);
+            }
+
         }
 
         /// <summary>

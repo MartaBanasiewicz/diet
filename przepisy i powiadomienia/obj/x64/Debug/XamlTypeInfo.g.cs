@@ -156,101 +156,107 @@ namespace przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[46];
-            _typeNameTable[0] = "przepisy_i_powiadomienia.Cele";
+            _typeNameTable = new string[49];
+            _typeNameTable[0] = "przepisy_i_powiadomienia.About";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "przepisy_i_powiadomienia.dodawanie_przepisu";
-            _typeNameTable[4] = "przepisy_i_powiadomienia.Main_menu";
-            _typeNameTable[5] = "przepisy_i_powiadomienia.Przepisy";
-            _typeNameTable[6] = "przepisy_i_powiadomienia.przepis_calosc";
-            _typeNameTable[7] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart";
-            _typeNameTable[8] = "Windows.UI.Xaml.Controls.Control";
-            _typeNameTable[9] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>";
-            _typeNameTable[10] = "Object";
-            _typeNameTable[11] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries";
-            _typeNameTable[12] = "System.Collections.ObjectModel.ObservableCollection`1<Object>";
-            _typeNameTable[13] = "System.Collections.ObjectModel.Collection`1<Object>";
-            _typeNameTable[14] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[15] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis";
-            _typeNameTable[16] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation";
-            _typeNameTable[17] = "System.Enum";
-            _typeNameTable[18] = "System.ValueType";
-            _typeNameTable[19] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
-            _typeNameTable[20] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
-            _typeNameTable[21] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener";
-            _typeNameTable[22] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[23] = "System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[24] = "Windows.UI.Xaml.Style";
-            _typeNameTable[25] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>";
-            _typeNameTable[26] = "Windows.UI.Xaml.ResourceDictionary";
-            _typeNameTable[27] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries";
-            _typeNameTable[28] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>";
-            _typeNameTable[29] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes";
-            _typeNameTable[30] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes";
-            _typeNameTable[31] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries";
-            _typeNameTable[32] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series";
-            _typeNameTable[33] = "Windows.UI.Xaml.Data.Binding";
-            _typeNameTable[34] = "Boolean";
-            _typeNameTable[35] = "Windows.UI.Xaml.Media.PointCollection";
-            _typeNameTable[36] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis";
-            _typeNameTable[37] = "System.Nullable`1<Int32>";
-            _typeNameTable[38] = "String";
-            _typeNameTable[39] = "System.Collections.IEnumerable";
-            _typeNameTable[40] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence";
-            _typeNameTable[41] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
-            _typeNameTable[42] = "TimeSpan";
-            _typeNameTable[43] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost";
-            _typeNameTable[44] = "przepisy_i_powiadomienia.Statystyki";
-            _typeNameTable[45] = "przepisy_i_powiadomienia.Wskazniki";
+            _typeNameTable[3] = "przepisy_i_powiadomienia.Cele";
+            _typeNameTable[4] = "przepisy_i_powiadomienia.dodawanie_przepisu";
+            _typeNameTable[5] = "przepisy_i_powiadomienia.Main_menu";
+            _typeNameTable[6] = "przepisy_i_powiadomienia.Przepisy";
+            _typeNameTable[7] = "przepisy_i_powiadomienia.przepis_calosc";
+            _typeNameTable[8] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart";
+            _typeNameTable[9] = "Windows.UI.Xaml.Controls.Control";
+            _typeNameTable[10] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>";
+            _typeNameTable[11] = "Object";
+            _typeNameTable[12] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries";
+            _typeNameTable[13] = "System.Collections.ObjectModel.ObservableCollection`1<Object>";
+            _typeNameTable[14] = "System.Collections.ObjectModel.Collection`1<Object>";
+            _typeNameTable[15] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
+            _typeNameTable[16] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis";
+            _typeNameTable[17] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation";
+            _typeNameTable[18] = "System.Enum";
+            _typeNameTable[19] = "System.ValueType";
+            _typeNameTable[20] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
+            _typeNameTable[21] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
+            _typeNameTable[22] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener";
+            _typeNameTable[23] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
+            _typeNameTable[24] = "System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
+            _typeNameTable[25] = "Windows.UI.Xaml.Style";
+            _typeNameTable[26] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>";
+            _typeNameTable[27] = "Windows.UI.Xaml.ResourceDictionary";
+            _typeNameTable[28] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries";
+            _typeNameTable[29] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>";
+            _typeNameTable[30] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes";
+            _typeNameTable[31] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes";
+            _typeNameTable[32] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries";
+            _typeNameTable[33] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series";
+            _typeNameTable[34] = "Windows.UI.Xaml.Data.Binding";
+            _typeNameTable[35] = "Boolean";
+            _typeNameTable[36] = "Windows.UI.Xaml.Media.PointCollection";
+            _typeNameTable[37] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis";
+            _typeNameTable[38] = "System.Nullable`1<Int32>";
+            _typeNameTable[39] = "String";
+            _typeNameTable[40] = "System.Collections.IEnumerable";
+            _typeNameTable[41] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence";
+            _typeNameTable[42] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
+            _typeNameTable[43] = "TimeSpan";
+            _typeNameTable[44] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost";
+            _typeNameTable[45] = "przepisy_i_powiadomienia.Statystyki";
+            _typeNameTable[46] = "przepisy_i_powiadomienia.Views.Trasa";
+            _typeNameTable[47] = "przepisy_i_powiadomienia.Views.UlubioneT";
+            _typeNameTable[48] = "przepisy_i_powiadomienia.Wskazniki";
 
-            _typeTable = new global::System.Type[46];
-            _typeTable[0] = typeof(global::przepisy_i_powiadomienia.Cele);
+            _typeTable = new global::System.Type[49];
+            _typeTable[0] = typeof(global::przepisy_i_powiadomienia.About);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::przepisy_i_powiadomienia.dodawanie_przepisu);
-            _typeTable[4] = typeof(global::przepisy_i_powiadomienia.Main_menu);
-            _typeTable[5] = typeof(global::przepisy_i_powiadomienia.Przepisy);
-            _typeTable[6] = typeof(global::przepisy_i_powiadomienia.przepis_calosc);
-            _typeTable[7] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.Control);
-            _typeTable[9] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>);
-            _typeTable[10] = typeof(global::System.Object);
-            _typeTable[11] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries);
-            _typeTable[12] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>);
-            _typeTable[13] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Object>);
-            _typeTable[14] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[15] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis);
-            _typeTable[16] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation);
-            _typeTable[17] = typeof(global::System.Enum);
-            _typeTable[18] = typeof(global::System.ValueType);
-            _typeTable[19] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
-            _typeTable[20] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
-            _typeTable[21] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener);
-            _typeTable[22] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[23] = typeof(global::System.Collections.ObjectModel.ReadOnlyCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[24] = typeof(global::Windows.UI.Xaml.Style);
-            _typeTable[25] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>);
-            _typeTable[26] = typeof(global::Windows.UI.Xaml.ResourceDictionary);
-            _typeTable[27] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries);
-            _typeTable[28] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>);
-            _typeTable[29] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes);
-            _typeTable[30] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes);
-            _typeTable[31] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries);
-            _typeTable[32] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series);
-            _typeTable[33] = typeof(global::Windows.UI.Xaml.Data.Binding);
-            _typeTable[34] = typeof(global::System.Boolean);
-            _typeTable[35] = typeof(global::Windows.UI.Xaml.Media.PointCollection);
-            _typeTable[36] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis);
-            _typeTable[37] = typeof(global::System.Nullable<global::System.Int32>);
-            _typeTable[38] = typeof(global::System.String);
-            _typeTable[39] = typeof(global::System.Collections.IEnumerable);
-            _typeTable[40] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence);
-            _typeTable[41] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
-            _typeTable[42] = typeof(global::System.TimeSpan);
-            _typeTable[43] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost);
-            _typeTable[44] = typeof(global::przepisy_i_powiadomienia.Statystyki);
-            _typeTable[45] = typeof(global::przepisy_i_powiadomienia.Wskazniki);
+            _typeTable[3] = typeof(global::przepisy_i_powiadomienia.Cele);
+            _typeTable[4] = typeof(global::przepisy_i_powiadomienia.dodawanie_przepisu);
+            _typeTable[5] = typeof(global::przepisy_i_powiadomienia.Main_menu);
+            _typeTable[6] = typeof(global::przepisy_i_powiadomienia.Przepisy);
+            _typeTable[7] = typeof(global::przepisy_i_powiadomienia.przepis_calosc);
+            _typeTable[8] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.Control);
+            _typeTable[10] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>);
+            _typeTable[11] = typeof(global::System.Object);
+            _typeTable[12] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries);
+            _typeTable[13] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>);
+            _typeTable[14] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Object>);
+            _typeTable[15] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
+            _typeTable[16] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis);
+            _typeTable[17] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation);
+            _typeTable[18] = typeof(global::System.Enum);
+            _typeTable[19] = typeof(global::System.ValueType);
+            _typeTable[20] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
+            _typeTable[21] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
+            _typeTable[22] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener);
+            _typeTable[23] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
+            _typeTable[24] = typeof(global::System.Collections.ObjectModel.ReadOnlyCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
+            _typeTable[25] = typeof(global::Windows.UI.Xaml.Style);
+            _typeTable[26] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>);
+            _typeTable[27] = typeof(global::Windows.UI.Xaml.ResourceDictionary);
+            _typeTable[28] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries);
+            _typeTable[29] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>);
+            _typeTable[30] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes);
+            _typeTable[31] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes);
+            _typeTable[32] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries);
+            _typeTable[33] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series);
+            _typeTable[34] = typeof(global::Windows.UI.Xaml.Data.Binding);
+            _typeTable[35] = typeof(global::System.Boolean);
+            _typeTable[36] = typeof(global::Windows.UI.Xaml.Media.PointCollection);
+            _typeTable[37] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis);
+            _typeTable[38] = typeof(global::System.Nullable<global::System.Int32>);
+            _typeTable[39] = typeof(global::System.String);
+            _typeTable[40] = typeof(global::System.Collections.IEnumerable);
+            _typeTable[41] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence);
+            _typeTable[42] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
+            _typeTable[43] = typeof(global::System.TimeSpan);
+            _typeTable[44] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost);
+            _typeTable[45] = typeof(global::przepisy_i_powiadomienia.Statystyki);
+            _typeTable[46] = typeof(global::przepisy_i_powiadomienia.Views.Trasa);
+            _typeTable[47] = typeof(global::przepisy_i_powiadomienia.Views.UlubioneT);
+            _typeTable[48] = typeof(global::przepisy_i_powiadomienia.Wskazniki);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -285,36 +291,33 @@ namespace przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_Cele() { return new global::przepisy_i_powiadomienia.Cele(); }
-        private object Activate_3_dodawanie_przepisu() { return new global::przepisy_i_powiadomienia.dodawanie_przepisu(); }
-        private object Activate_4_Main_menu() { return new global::przepisy_i_powiadomienia.Main_menu(); }
-        private object Activate_5_Przepisy() { return new global::przepisy_i_powiadomienia.Przepisy(); }
-        private object Activate_6_przepis_calosc() { return new global::przepisy_i_powiadomienia.przepis_calosc(); }
-        private object Activate_7_Chart() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart(); }
-        private object Activate_9_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>(); }
-        private object Activate_12_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>(); }
-        private object Activate_13_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Object>(); }
-        private object Activate_14_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
-        private object Activate_19_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
-        private object Activate_20_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
-        private object Activate_22_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
-        private object Activate_25_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>(); }
-        private object Activate_27_LineSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries(); }
-        private object Activate_44_Statystyki() { return new global::przepisy_i_powiadomienia.Statystyki(); }
-        private object Activate_45_Wskazniki() { return new global::przepisy_i_powiadomienia.Wskazniki(); }
-        private void VectorAdd_9_Collection(object instance, object item)
+        private object Activate_0_About() { return new global::przepisy_i_powiadomienia.About(); }
+        private object Activate_3_Cele() { return new global::przepisy_i_powiadomienia.Cele(); }
+        private object Activate_4_dodawanie_przepisu() { return new global::przepisy_i_powiadomienia.dodawanie_przepisu(); }
+        private object Activate_5_Main_menu() { return new global::przepisy_i_powiadomienia.Main_menu(); }
+        private object Activate_6_Przepisy() { return new global::przepisy_i_powiadomienia.Przepisy(); }
+        private object Activate_7_przepis_calosc() { return new global::przepisy_i_powiadomienia.przepis_calosc(); }
+        private object Activate_8_Chart() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart(); }
+        private object Activate_10_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>(); }
+        private object Activate_13_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>(); }
+        private object Activate_14_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Object>(); }
+        private object Activate_15_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
+        private object Activate_20_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
+        private object Activate_21_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
+        private object Activate_23_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
+        private object Activate_26_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>(); }
+        private object Activate_28_LineSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries(); }
+        private object Activate_45_Statystyki() { return new global::przepisy_i_powiadomienia.Statystyki(); }
+        private object Activate_46_Trasa() { return new global::przepisy_i_powiadomienia.Views.Trasa(); }
+        private object Activate_47_UlubioneT() { return new global::przepisy_i_powiadomienia.Views.UlubioneT(); }
+        private object Activate_48_Wskazniki() { return new global::przepisy_i_powiadomienia.Wskazniki(); }
+        private void VectorAdd_10_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_12_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
-            var newItem = (global::System.Object)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_13_Collection(object instance, object item)
+        private void VectorAdd_13_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
@@ -322,35 +325,41 @@ namespace przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo
         }
         private void VectorAdd_14_Collection(object instance, object item)
         {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
+            var newItem = (global::System.Object)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_15_Collection(object instance, object item)
+        {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_19_ObservableCollection(object instance, object item)
+        private void VectorAdd_20_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_20_Collection(object instance, object item)
+        private void VectorAdd_21_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_22_ObservableCollection(object instance, object item)
+        private void VectorAdd_23_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_23_ReadOnlyCollection(object instance, object item)
+        private void VectorAdd_24_ReadOnlyCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_25_Collection(object instance, object item)
+        private void VectorAdd_26_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.ResourceDictionary>)instance;
             var newItem = (global::Windows.UI.Xaml.ResourceDictionary)item;
@@ -367,9 +376,9 @@ namespace przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  przepisy_i_powiadomienia.Cele
+            case 0:   //  przepisy_i_powiadomienia.About
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_Cele;
+                userType.Activator = Activate_0_About;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -382,37 +391,44 @@ namespace przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo
                 xamlType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  przepisy_i_powiadomienia.dodawanie_przepisu
+            case 3:   //  przepisy_i_powiadomienia.Cele
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_dodawanie_przepisu;
+                userType.Activator = Activate_3_Cele;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  przepisy_i_powiadomienia.Main_menu
+            case 4:   //  przepisy_i_powiadomienia.dodawanie_przepisu
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_Main_menu;
+                userType.Activator = Activate_4_dodawanie_przepisu;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  przepisy_i_powiadomienia.Przepisy
+            case 5:   //  przepisy_i_powiadomienia.Main_menu
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_Przepisy;
+                userType.Activator = Activate_5_Main_menu;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  przepisy_i_powiadomienia.przepis_calosc
+            case 6:   //  przepisy_i_powiadomienia.Przepisy
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_przepis_calosc;
+                userType.Activator = Activate_6_Przepisy;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart
+            case 7:   //  przepisy_i_powiadomienia.przepis_calosc
+                userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_przepis_calosc;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_7_Chart;
+                userType.Activator = Activate_8_Chart;
                 userType.SetContentPropertyName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Series");
                 userType.AddMemberName("Series");
                 userType.AddMemberName("Title");
@@ -428,49 +444,49 @@ namespace przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 8:   //  Windows.UI.Xaml.Controls.Control
+            case 9:   //  Windows.UI.Xaml.Controls.Control
                 xamlType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>
+            case 10:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_9_Collection;
+                userType.CollectionAdd = VectorAdd_10_Collection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Object
+            case 11:   //  Object
                 xamlType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries
+            case 12:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.AddMemberName("LegendItems");
                 xamlType = userType;
                 break;
 
-            case 12:   //  System.Collections.ObjectModel.ObservableCollection`1<Object>
+            case 13:   //  System.Collections.ObjectModel.ObservableCollection`1<Object>
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Object>"));
-                userType.CollectionAdd = VectorAdd_12_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_13_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 13:   //  System.Collections.ObjectModel.Collection`1<Object>
-                userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_13_Collection;
-                userType.CollectionAdd = VectorAdd_13_Collection;
-                xamlType = userType;
-                break;
-
-            case 14:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+            case 14:   //  System.Collections.ObjectModel.Collection`1<Object>
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_14_Collection;
                 userType.CollectionAdd = VectorAdd_14_Collection;
                 xamlType = userType;
                 break;
 
-            case 15:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis
+            case 15:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+                userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_15_Collection;
+                userType.CollectionAdd = VectorAdd_15_Collection;
+                xamlType = userType;
+                break;
+
+            case 16:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.AddMemberName("Orientation");
                 userType.AddMemberName("RegisteredListeners");
@@ -478,7 +494,7 @@ namespace przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 16:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation
+            case 17:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation.None);
                 userType.AddEnumValue("X", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation.X);
@@ -486,73 +502,73 @@ namespace przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 17:   //  System.Enum
+            case 18:   //  System.Enum
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 18:   //  System.ValueType
+            case 19:   //  System.ValueType
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 19:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
+            case 20:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>"));
-                userType.CollectionAdd = VectorAdd_19_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_20_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 20:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
+            case 21:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_20_Collection;
-                userType.CollectionAdd = VectorAdd_20_Collection;
+                userType.Activator = Activate_21_Collection;
+                userType.CollectionAdd = VectorAdd_21_Collection;
                 xamlType = userType;
                 break;
 
-            case 21:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener
+            case 22:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 xamlType = userType;
                 break;
 
-            case 22:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+            case 23:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>"));
-                userType.CollectionAdd = VectorAdd_22_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_23_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 23:   //  System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+            case 24:   //  System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_23_ReadOnlyCollection;
+                userType.CollectionAdd = VectorAdd_24_ReadOnlyCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 24:   //  Windows.UI.Xaml.Style
+            case 25:   //  Windows.UI.Xaml.Style
                 xamlType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 25:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>
+            case 26:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_25_Collection;
+                userType.CollectionAdd = VectorAdd_26_Collection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 26:   //  Windows.UI.Xaml.ResourceDictionary
+            case 27:   //  Windows.UI.Xaml.ResourceDictionary
                 xamlType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 27:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries
+            case 28:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>"));
-                userType.Activator = Activate_27_LineSeries;
+                userType.Activator = Activate_28_LineSeries;
                 userType.AddMemberName("Points");
                 userType.AddMemberName("PolylineStyle");
                 xamlType = userType;
                 break;
 
-            case 28:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>
+            case 29:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes"));
                 userType.AddMemberName("DependentRangeAxis");
                 userType.AddMemberName("IndependentAxis");
@@ -561,18 +577,18 @@ namespace przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 29:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes
+            case 30:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes"));
                 userType.AddMemberName("GlobalSeriesIndex");
                 xamlType = userType;
                 break;
 
-            case 30:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes
+            case 31:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries"));
                 xamlType = userType;
                 break;
 
-            case 31:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries
+            case 32:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Series"));
                 userType.AddMemberName("IndependentValueBinding");
                 userType.AddMemberName("DependentValueBinding");
@@ -589,7 +605,7 @@ namespace przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 32:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Series
+            case 33:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Series
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
                 userType.AddMemberName("Title");
                 userType.AddMemberName("SeriesHost");
@@ -597,41 +613,41 @@ namespace przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 33:   //  Windows.UI.Xaml.Data.Binding
+            case 34:   //  Windows.UI.Xaml.Data.Binding
                 xamlType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 34:   //  Boolean
+            case 35:   //  Boolean
                 xamlType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 35:   //  Windows.UI.Xaml.Media.PointCollection
+            case 36:   //  Windows.UI.Xaml.Media.PointCollection
                 xamlType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 36:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis
+            case 37:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 37:   //  System.Nullable`1<Int32>
+            case 38:   //  System.Nullable`1<Int32>
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 38:   //  String
+            case 39:   //  String
                 xamlType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 39:   //  System.Collections.IEnumerable
+            case 40:   //  System.Collections.IEnumerable
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 40:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence
+            case 41:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Simultaneous", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence.Simultaneous);
                 userType.AddEnumValue("FirstToLast", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence.FirstToLast);
@@ -639,32 +655,46 @@ namespace przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 41:   //  Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+            case 42:   //  Windows.UI.Xaml.Media.Animation.EasingFunctionBase
                 xamlType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 42:   //  TimeSpan
+            case 43:   //  TimeSpan
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 43:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost
+            case 44:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 44:   //  przepisy_i_powiadomienia.Statystyki
+            case 45:   //  przepisy_i_powiadomienia.Statystyki
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_44_Statystyki;
+                userType.Activator = Activate_45_Statystyki;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 45:   //  przepisy_i_powiadomienia.Wskazniki
+            case 46:   //  przepisy_i_powiadomienia.Views.Trasa
                 userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_45_Wskazniki;
+                userType.Activator = Activate_46_Trasa;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 47:   //  przepisy_i_powiadomienia.Views.UlubioneT
+                userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_47_UlubioneT;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 48:   //  przepisy_i_powiadomienia.Wskazniki
+                userType = new global::przepisy_i_powiadomienia.przepisy_i_powiadomienia_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_48_Wskazniki;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

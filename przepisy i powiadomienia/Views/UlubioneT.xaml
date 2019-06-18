@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="przepisy_i_powiadomienia.Views.UlubioneT"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:przepisy_i_powiadomienia.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <TextBlock Name="tbTrasy" Text="Wybierz trasę: " HorizontalAlignment="Center" Style="{ThemeResource CaptionTextBlockStyle}" Margin="10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <ListBox Name="lbTrasy" VerticalAlignment="Top" Width="400" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" VerticalAlignment="Bottom">
+            <CommandBar>
+                <AppBarButton Name="bWstecz" Icon="Back" HorizontalAlignment="Left" Click="Cofnij" Label="Wstecz"/>
+                <AppBarButton Name="bSzukaj" Click="Szukaj" HorizontalAlignment="Right" Icon="Find" Label="Szukaj"/>
+                <AppBarButton Name="uTrase" Click="Usun" Icon="Delete" Label="Usun trase"/>
+            </CommandBar>
+        </StackPanel>
+    </Grid>
+</Page>

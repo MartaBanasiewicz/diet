@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace przepisy_i_powiadomienia
 {
-    public class PoradnikContext : DbContext //odwzoranie bazy na kod
+    public class PoradnikContext : DbContext
     {
-        public DbSet<Target> Targets { get; set; }  //odwzorowanie tabeli targets-wartosci do ktorych dazy uzytkownik
-        public DbSet<Measurement> Measurements { get; set; }    //odwzorowanie tabeli Mezyrments - aktualne warosci pomiarow uzytkownika 
+        public DbSet<Target> Targets { get; set; }
+        public DbSet<Measurement> Measurements { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=poradnik.db");   //querystring
+            optionsBuilder.UseSqlite("Data Source=poradnik.db");
         }
     }
 

@@ -37,7 +37,6 @@ namespace przepisy_i_powiadomienia
         }
 
         private PoradnikContext db = new PoradnikContext();
-        private Random _random = new Random();
         private List<Measurement> measurements;
         List<NameValueItem> weightValues = new List<NameValueItem>();
         List<NameValueItem> waterValues = new List<NameValueItem>();
@@ -67,6 +66,9 @@ namespace przepisy_i_powiadomienia
 
         private void UpdateChart(Chart chart, IEnumerable<NameValueItem> values)
         {
+            if (values == null || !values.Any())
+                return;
+
             ((LineSeries)chart.Series[0]).ItemsSource = values;
             ((LineSeries)chart.Series[0]).DependentRangeAxis =
                 new LinearAxis

@@ -8,12 +8,15 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
 przepisy i powiadomienia.xr.xml
+Views\About.xbf
 Views\Cele.xbf
 Views\dodawanie_przepisu.xbf
 Views\Main_menu.xbf
 Views\przepis_calosc.xbf
 Views\Przepisy.xbf
 Views\Statystyki.xbf
+Views\Trasa.xbf
+Views\UlubioneT.xbf
 Views\Wskazniki.xbf
 DB\p4.sql
 DB\ppp.db

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Xml;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -12,6 +14,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Data.Xml.Dom;
+using przepisy_i_powiadomienia.Views;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -24,6 +28,7 @@ namespace przepisy_i_powiadomienia
     {
         public Main_menu()
         {
+
             this.InitializeComponent();
         }
 
@@ -31,33 +36,37 @@ namespace przepisy_i_powiadomienia
 
         private void Przepisy(object sender, TappedRoutedEventArgs e)
         {
-             Frame.Navigate(typeof(Przepisy), null);
+            Frame.Navigate(typeof(Przepisy), null);
             //Frame.Navigate(typeof(dodawanie_przepisu), null);
         }
 
         private void Trasa(object sender, TappedRoutedEventArgs e)
         {
+            Frame.Navigate(typeof(Trasa), null);
 
         }
 
         private void Statystyki(object sender, TappedRoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Statystyki));
+            Frame.Navigate(typeof(Statystyki), null);
+
         }
 
         private void Wskazniki(object sender, TappedRoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Wskazniki));
+            Frame.Navigate(typeof(Wskazniki), null);
+
         }
 
         private void Powiadomienia(object sender, TappedRoutedEventArgs e)
         {
+            Frame.Navigate(typeof(About), null);
 
         }
 
         private void Cele(object sender, TappedRoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Cele));
+            Frame.Navigate(typeof(Cele), null);
 
         }
 

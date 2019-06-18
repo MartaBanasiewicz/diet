@@ -120,6 +120,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DaneGeograficzne.cs" />
+    <Compile Include="Views\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Cele.xaml.cs">
       <DependentUpon>Cele.xaml</DependentUpon>
     </Compile>
@@ -151,6 +155,12 @@
     <Compile Include="SkladnikiPrzepisy.cs" />
     <Compile Include="Views\Statystyki.xaml.cs">
       <DependentUpon>Statystyki.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trasa.xaml.cs">
+      <DependentUpon>Trasa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UlubioneT.xaml.cs">
+      <DependentUpon>UlubioneT.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Wskazniki.xaml.cs">
       <DependentUpon>Wskazniki.xaml</DependentUpon>
@@ -188,6 +198,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Views\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Cele.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -212,6 +226,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Trasa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UlubioneT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Wskazniki.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -231,6 +253,9 @@
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.8</Version>
+    </PackageReference>
+    <PackageReference Include="NUnit">
+      <Version>3.12.0</Version>
     </PackageReference>
     <PackageReference Include="SQLite">
       <Version>3.13.0</Version>
